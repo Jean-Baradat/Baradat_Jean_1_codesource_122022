@@ -28,27 +28,27 @@
         </nav>
     </header>
     <main>
-        <section class="search-section">
-            <h1 class="title">
-                Trouvez Votre hébergement pour des vacances de rêve
-            </h1>
-            <p class="subtitle">
-                En plein centre-ville ou en pleine nature
-            </p>
-
+        <h1 class="title">
+            Trouvez Votre hébergement pour des vacances de rêve
+        </h1>
+        <p class="subtitle">
+            En plein centre-ville ou en pleine nature
+        </p>
+        <aside class="search-aside">
             <form class="search-bar">
                 <label for="address">
+                    <span class="visually-hidden">Rechercher un hébergement</span>
                     <i class="fa-sharp fa-solid fa-location-dot fa-1x"></i>
                 </label>
-                <input type="text" name="address" id="address" placeholder="ex: Marseille, France"
-                    value="Marseille, France">
-                <input type="submit" value="Rechercher" class="submit-big-screen">
-                <input type="submit" value="" class="submit-small-screen">
-                <i class="fa-sharp fa-solid fa-magnifying-glass form-icon-small-screen fa-1x"></i>
+                <input type="text" name="address" id="address" placeholder="e.g. Marseille, France" required>
+                <button type="submit">
+                    <span class="submit-big-screen">Rechercher</span>
+                    <i class="fa-sharp fa-solid fa-magnifying-glass fa-1x submit-small-screen"></i>
+                </button>
             </form>
 
             <div class="filter-zone">
-                <p class="title-filter-zone">Filtres</p>
+                <h2 class="title-filter-zone">Filtres</h2>
                 <button class="filter-element">
                     <i class="fa-solid fa-money-bill-wave fa-lg icon-filter-element"></i>
                     <span class="filter-element-title">Économique</span>
@@ -75,11 +75,11 @@
                     Plus de 500 logements sont disponibles dans cette ville
                 </p>
             </div>
-        </section>
-        <section class="accommodation-zone" id="accommodation">
-            <div class="accommodation-of-search">
+        </aside>
+        <article class="accommodation-zone" id="accommodation">
+            <section class="accommodation-of-search">
                 <h2>Hébergements à Marseille</h2>
-                <article class="accommodation-container">
+                <div class="accommodation-container">
                     <a href="#" class="card-accommodation">
                         <img src="./assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             alt="Auberge La Canebière" srcset="
@@ -224,15 +224,15 @@
                             </div>
                         </div>
                     </a>
-                </article>
+                </div>
                 <a href="#" class="btn-more-accommodation">Afficher plus</a>
-            </div>
+            </section>
             <aside class="popular-accommodation">
                 <div class="popular-accommodation-title">
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line popular-acc-title-icon"></i>
                 </div>
-                <article class="popular-accommodation-container">
+                <div class="popular-accommodation-container">
                     <a href="#" class="card-popular-accommodation">
                         <img src="./assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                             alt="Hôtel Le soleil du matin" srcset="
@@ -305,12 +305,12 @@
                             </div>
                         </div>
                     </a>
-                </article>
+                </div>
             </aside>
-        </section>
-        <section class="activity-zone" id="activity">
+        </article>
+        <article class="activity-zone" id="activity">
             <h2>Activités à Marseille</h2>
-            <article class="activity-container">
+            <div class="activity-container">
                 <a href="#" class="card-activity">
                     <img src="./assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                         alt="Vieux-Port" srcset="
@@ -351,11 +351,11 @@
                             ">
                     <h3>Notre-Dame-de-la-Garde</h3>
                 </a>
-            </article>
-        </section>
+            </div>
+        </article>
     </main>
     <footer>
-        <section class="footer-content">
+        <article class="footer-content">
             <div class="footer-element">
                 <h3>À propos</h3>
                 <a href="#">Fonctionnement du site</a>
@@ -372,7 +372,7 @@
                 <a href="#">Centre d’aide</a>
                 <a href="#">Nous contacter</a>
             </div>
-        </section>
+        </article>
     </footer>
 </body>
 
