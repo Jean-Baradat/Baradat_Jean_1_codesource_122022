@@ -59,8 +59,8 @@ body {
     margin: 0 auto;
 }
 
-/* header */
-header {
+/* main-header */
+.main-header {
     display: grid;
     padding: 44px 40px;
     width: 100%;
@@ -473,6 +473,12 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    /* title */
+    .title,
+    .subtitle {
+        padding: 0 2rem;
+    }
+
     /* main */
     main {
         padding: 0;
@@ -497,8 +503,8 @@ footer {
         padding: 0 2rem;
     }
 
-    /* header */
-    header {
+    /* main-header */
+    .main-header {
         grid-template: 1fr 1fr / 1fr;
         padding: 0;
         margin: 1rem 0 2rem 0;

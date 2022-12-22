@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/77dffb7ded.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <a href="#" class="logo-booki">
             <img src="./assets/images/logo/Booki.png" srcset="./assets/images/logo/Booki@3x.png 3x" alt="Booki logo">
         </a>
@@ -76,8 +75,8 @@
                 </p>
             </div>
         </aside>
-        <article class="accommodation-zone" id="accommodation">
-            <section class="accommodation-of-search">
+        <section class="accommodation-zone" id="accommodation">
+            <article class="accommodation-of-search">
                 <h2>Hébergements à Marseille</h2>
                 <div class="accommodation-container">
                     <a href="#" class="card-accommodation">
@@ -226,12 +225,12 @@
                     </a>
                 </div>
                 <a href="#" class="btn-more-accommodation">Afficher plus</a>
-            </section>
+            </article>
             <aside class="popular-accommodation">
-                <div class="popular-accommodation-title">
+                <header class="popular-accommodation-title">
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line popular-acc-title-icon"></i>
-                </div>
+                </header>
                 <div class="popular-accommodation-container">
                     <a href="#" class="card-popular-accommodation">
                         <img src="./assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -307,7 +306,7 @@
                     </a>
                 </div>
             </aside>
-        </article>
+        </section>
         <article class="activity-zone" id="activity">
             <h2>Activités à Marseille</h2>
             <div class="activity-container">
@@ -355,7 +354,7 @@
         </article>
     </main>
     <footer>
-        <article class="footer-content">
+        <section class="footer-content">
             <div class="footer-element">
                 <h3>À propos</h3>
                 <a href="#">Fonctionnement du site</a>
@@ -372,7 +371,7 @@
                 <a href="#">Centre d’aide</a>
                 <a href="#">Nous contacter</a>
             </div>
-        </article>
+        </section>
     </footer>
 </body>
 
